@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Archive</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-success text-center p-4 fw-bold">BOOK <span class="text-warning">ARCHIVE</span></h1>
+    <hr class="bg-success mb-5 mx-auto p-1 rounded-pill w-75">
+
+    <!-- Input field and search button  -->
+    <div class="input-group mb-3 w-50 mx-auto p-4">
+        <input id="search-field" type="text" class="form-control p-3 border-4 font-monospace"
+            placeholder="Type Your Book Here" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="searchBook()" class="btn btn-outline-secondary bg-danger text-white font-monospace"
+            type="button" id="button-addon2">Search</button>
+    </div>
+
+    <!-- Error Handling  -->
+    <div>
+        <h1 class="bg-secondary border-5 m-5 mx-auto p-2 rounded-pill text-dark text-center w-50 font-monospace"
+            id="error-search">
+            Please Type Something To Search!!!
+        </h1>
+    </div>
+
+    <!-- Results found  -->
+    <div class="text-success text-center p-4 font-monospace">
+        <h2 class="fw-bold" id="results-found-visibility">Results <span class="text-warning">Found</span> : <span
+                class="text-dark" id="results-found"></span> </h2>
+    </div>
+
+    <!-- total search  -->
+    <div class="text-success text-center p-4 font-monospace fw-bold">
+        <h2 class="fw-bold" id="total-search-visibility">Total <span class="text-warning">Search</span> : <span
+                class="text-dark" id="total-search"></span> </h2>
+    </div>
+
+    <!-- display search results  -->
+    <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4 w-75 mx-auto p-3">
+    </div>
+
+
+
+
+    <!-- JS link  -->
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
